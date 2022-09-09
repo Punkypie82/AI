@@ -25,12 +25,12 @@ for word in spamWords:
     if word in pWiSpam:
         pWiSpam[word] += (1)/(spamLen * 2 + hamLen)
     else:
-        pWiSpam[word] = (1)/(spamLen * 2 + hamLen)
+        pWiSpam[word] = (2)/(spamLen * 2 + hamLen)
 for word in hamWords:
     if word in pWiHam:
         pWiHam[word] += (1)/(hamLen * 2 + spamLen)
     else:
-        pWiHam[word] = (1)/(hamLen * 2 + spamLen)
+        pWiHam[word] = (2)/(hamLen * 2 + spamLen)
     
 inputData = []
 outputData = []
